@@ -1,4 +1,4 @@
-# PenguinMod/PenguinMod-Paint
+# Chipywarp-paint
 
 Original: PenguinMod
 Changed: Chipy
