@@ -1,25 +1,26 @@
 /* DO NOT EDIT
 @todo This file is copied from GUI and should be pulled out into a shared library.
 See https://github.com/LLK/scratch-paint/issues/13 */
+/* Fixed for dynamic theme support */
 
 $ui-pane-border: var(--paint-ui-pane-border, #D9D9D9);
-$ui-pane-gray: #F9F9F9;
-$ui-background-blue: #e8edf1;
+$ui-pane-gray: var(--paint-ui-pane-gray, #F9F9F9);
+$ui-background-blue: var(--paint-ui-background-blue, #e8edf1);
 
 $text-primary: var(--paint-text-primary, #575e75);
 
-$motion-primary: hsla(194, 100%, 50%);
-$motion-tertiary: #007da3;
-$motion-transparent: hsla(194, 100%, 50%, 0.35);
+$motion-primary: var(--motion-primary, var(--paint-accent, #00c3ff));
+$motion-tertiary: var(--motion-tertiary, var(--paint-accent-dark, #0099cc));
+$motion-transparent: var(--motion-transparent, var(--paint-accent-transparent, rgba(0, 195, 255, 0.35)));
 
-$red-primary: #FF661A;
-$red-tertiary: #E64D00;
+$red-primary: var(--red-primary, #FF661A);
+$red-tertiary: var(--red-tertiary, #E64D00);
 
-$sound-primary: #CF63CF;
-$sound-tertiary: #A63FA6;
+$sound-primary: var(--sound-primary, #CF63CF);
+$sound-tertiary: var(--sound-tertiary, #A63FA6);
 
-$control-primary: #FFAB19;
+$control-primary: var(--control-primary, #FFAB19);
 
-$data-primary: #FF8C1A;
+$data-primary: var(--data-primary, #FF8C1A);
 
 $form-border: var(--paint-form-border, #E9EEF2);
